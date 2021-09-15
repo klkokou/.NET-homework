@@ -2,20 +2,20 @@
 
 namespace Homework1
 {
-    public enum SupportedOperations
-    {
-        Plus,
-        Minus,
-        Multiply,
-        Divide
-    }
-
     public static class Calculator
     {
-        public static double Calculate(SupportedOperations operation, int val1, int val2)
+        public enum SupportedOperations
         {
-            var result = 0.0;
-            switch (operation)
+            Plus,
+            Minus,
+            Divide,
+            Multiply,
+        }
+
+        public static bool Calculate(int val1, SupportedOperations supportedOperations, int val2, out int result)
+        {
+            result = 0;
+            switch (supportedOperations)
             {
                 case SupportedOperations.Plus:
                     result = val1 + val2;
@@ -27,12 +27,18 @@ namespace Homework1
                     result = val1 * val2;
                     break;
                 case SupportedOperations.Divide:
-                    if (val2 != 0)
-                        result = (double)val1 / val2;
+                    if (val2 == 0)
+                    {
+                        return true;
+                    }
+
+                    result = val1 / val2;
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(supportedOperations), supportedOperations, null);
             }
 
-            return result;
+            return false;
         }
     }
 }

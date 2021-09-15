@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="0" TotalStatements="55" CoveragePercent="0" ReportType="DetailedXml" DotCoverVersion="2021.2">
+  <FileIndices>
+    <File Index="1" Name="C:\dot net\.NET-homework\src\Homework1\Homework1\Calculator.cs" ChecksumAlgorithm="SHA256" Checksum="67F0A75EE369418468CB2B864D1398C398571169AA4AA50A7B4D2CB0532D4885" />
+    <File Index="2" Name="c:\dot net\.net-homework\src\homework1\homework1\properties\assemblyinfo.cs" />
+    <File Index="3" Name="C:\dot net\.NET-homework\src\Homework1\Homework1\Program.cs" ChecksumAlgorithm="SHA256" Checksum="77C74BF6DFEFDFEC12F76BE62A90D634CF0FDE626B77DAC9460A26358B6E07DF" />
+    <File Index="4" Name="c:\dot net\.net-homework\src\homework1\homework1\obj\debug\.netframework,version=v4.7.2.assemblyattributes.cs" />
+    <File Index="5" Name="C:\dot net\.NET-homework\src\Homework1\Homework1\Parser.cs" ChecksumAlgorithm="SHA256" Checksum="FAC27E8FA2DED791E416702783C81A0863E2E4254C2996A3E5F7C9BE399458D2" />
+  </FileIndices>
+  <Assembly Name="Homework1" CoveredStatements="0" TotalStatements="55" CoveragePercent="0">
+    <Namespace Name="Homework1" CoveredStatements="0" TotalStatements="55" CoveragePercent="0">
+      <Type Name="Calculator" CoveredStatements="0" TotalStatements="17" CoveragePercent="0">
+        <Method Name="Calculate(System.Int32,Homework1.Calculator.SupportedOperations,System.Int32,System.Int32):System.Boolean" CoveredStatements="0" TotalStatements="17" CoveragePercent="0">
+          <Statement FileIndex="1" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="False" />
+          <Statement FileIndex="1" Line="17" Column="13" EndLine="17" EndColumn="24" Covered="False" />
+          <Statement FileIndex="1" Line="18" Column="13" EndLine="18" EndColumn="41" Covered="False" />
+          <Statement FileIndex="1" Line="21" Column="21" EndLine="21" EndColumn="42" Covered="False" />
+          <Statement FileIndex="1" Line="22" Column="21" EndLine="22" EndColumn="27" Covered="False" />
+          <Statement FileIndex="1" Line="24" Column="21" EndLine="24" EndColumn="42" Covered="False" />
+          <Statement FileIndex="1" Line="25" Column="21" EndLine="25" EndColumn="27" Covered="False" />
+          <Statement FileIndex="1" Line="27" Column="21" EndLine="27" EndColumn="42" Covered="False" />
+          <Statement FileIndex="1" Line="28" Column="21" EndLine="28" EndColumn="27" Covered="False" />
+          <Statement FileIndex="1" Line="30" Column="21" EndLine="30" EndColumn="35" Covered="False" />
+          <Statement FileIndex="1" Line="31" Column="21" EndLine="31" EndColumn="22" Covered="False" />
+          <Statement FileIndex="1" Line="32" Column="25" EndLine="32" EndColumn="37" Covered="False" />
+          <Statement FileIndex="1" Line="35" Column="21" EndLine="35" EndColumn="42" Covered="False" />
+          <Statement FileIndex="1" Line="36" Column="21" EndLine="36" EndColumn="27" Covered="False" />
+          <Statement FileIndex="1" Line="38" Column="21" EndLine="38" EndColumn="115" Covered="False" />
+          <Statement FileIndex="1" Line="41" Column="13" EndLine="41" EndColumn="26" Covered="False" />
+          <Statement FileIndex="1" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="False" />
+        </Method>
+      </Type>
+      <Type Name="Parser" CoveredStatements="0" TotalStatements="26" CoveragePercent="0">
+        <Method Name="CheckArgsLenghtOrQuit(System.String[]):System.Boolean" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+          <Statement FileIndex="5" Line="40" Column="9" EndLine="40" EndColumn="10" Covered="False" />
+          <Statement FileIndex="5" Line="41" Column="13" EndLine="41" EndColumn="34" Covered="False" />
+          <Statement FileIndex="5" Line="41" Column="35" EndLine="41" EndColumn="48" Covered="False" />
+          <Statement FileIndex="5" Line="42" Column="13" EndLine="42" EndColumn="85" Covered="False" />
+          <Statement FileIndex="5" Line="43" Column="13" EndLine="43" EndColumn="25" Covered="False" />
+          <Statement FileIndex="5" Line="44" Column="9" EndLine="44" EndColumn="10" Covered="False" />
+        </Method>
+        <Method Name="TryParseArgsOrQuit(System.String,System.Int32):System.Boolean" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+          <Statement FileIndex="5" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="False" />
+          <Statement FileIndex="5" Line="33" Column="13" EndLine="33" EndColumn="47" Covered="False" />
+          <Statement FileIndex="5" Line="34" Column="17" EndLine="34" EndColumn="30" Covered="False" />
+          <Statement FileIndex="5" Line="35" Column="13" EndLine="35" EndColumn="60" Covered="False" />
+          <Statement FileIndex="5" Line="36" Column="13" EndLine="36" EndColumn="25" Covered="False" />
+          <Statement FileIndex="5" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="False" />
+        </Method>
+        <Method Name="TryParseOperatorOrQuit(System.String,Homework1.Calculator.SupportedOperations):System.Boolean" CoveredStatements="0" TotalStatements="14" CoveragePercent="0">
+          <Statement FileIndex="5" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="False" />
+          <Statement FileIndex="5" Line="9" Column="13" EndLine="9" EndColumn="25" Covered="False" />
+          <Statement FileIndex="5" Line="12" Column="21" EndLine="12" EndColumn="69" Covered="False" />
+          <Statement FileIndex="5" Line="13" Column="21" EndLine="13" EndColumn="27" Covered="False" />
+          <Statement FileIndex="5" Line="15" Column="21" EndLine="15" EndColumn="70" Covered="False" />
+          <Statement FileIndex="5" Line="16" Column="21" EndLine="16" EndColumn="27" Covered="False" />
+          <Statement FileIndex="5" Line="18" Column="21" EndLine="18" EndColumn="73" Covered="False" />
+          <Statement FileIndex="5" Line="19" Column="21" EndLine="19" EndColumn="27" Covered="False" />
+          <Statement FileIndex="5" Line="21" Column="21" EndLine="21" EndColumn="71" Covered="False" />
+          <Statement FileIndex="5" Line="22" Column="21" EndLine="22" EndColumn="27" Covered="False" />
+          <Statement FileIndex="5" Line="24" Column="21" EndLine="24" EndColumn="41" Covered="False" />
+          <Statement FileIndex="5" Line="25" Column="21" EndLine="25" EndColumn="33" Covered="False" />
+          <Statement FileIndex="5" Line="28" Column="13" EndLine="28" EndColumn="26" Covered="False" />
+          <Statement FileIndex="5" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="False" />
+        </Method>
+      </Type>
+      <Type Name="Program" CoveredStatements="0" TotalStatements="12" CoveragePercent="0">
+        <Method Name="Main(System.String[]):System.Int32" CoveredStatements="0" TotalStatements="12" CoveragePercent="0">
+          <Statement FileIndex="3" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="False" />
+          <Statement FileIndex="3" Line="14" Column="13" EndLine="14" EndColumn="52" Covered="False" />
+          <Statement FileIndex="3" Line="15" Column="17" EndLine="15" EndColumn="39" Covered="False" />
+          <Statement FileIndex="3" Line="17" Column="13" EndLine="17" EndColumn="118" Covered="False" />
+          <Statement FileIndex="3" Line="18" Column="17" EndLine="18" EndColumn="39" Covered="False" />
+          <Statement FileIndex="3" Line="20" Column="13" EndLine="20" EndColumn="75" Covered="False" />
+          <Statement FileIndex="3" Line="21" Column="17" EndLine="21" EndColumn="39" Covered="False" />
+          <Statement FileIndex="3" Line="23" Column="13" EndLine="23" EndColumn="77" Covered="False" />
+          <Statement FileIndex="3" Line="24" Column="17" EndLine="24" EndColumn="46" Covered="False" />
+          <Statement FileIndex="3" Line="26" Column="13" EndLine="26" EndColumn="53" Covered="False" />
+          <Statement FileIndex="3" Line="28" Column="13" EndLine="28" EndColumn="22" Covered="False" />
+          <Statement FileIndex="3" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="False" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
