@@ -26,4 +26,4 @@ jobs:
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
       with:
-        file: .NET-homework
+        file: .NET-homework/hw1coveragereport.xml
