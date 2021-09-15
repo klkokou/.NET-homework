@@ -12,10 +12,10 @@ namespace Homework1
             Multiply,
         }
 
-        public static bool Calculate(int val1, SupportedOperations supportedOperations, int val2, out int result)
+        public static double Calculate(int val1, SupportedOperations operation, int val2)
         {
-            result = 0;
-            switch (supportedOperations)
+            var result = 0.0;
+            switch (operation)
             {
                 case SupportedOperations.Plus:
                     result = val1 + val2;
@@ -27,18 +27,11 @@ namespace Homework1
                     result = val1 * val2;
                     break;
                 case SupportedOperations.Divide:
-                    if (val2 == 0)
-                    {
-                        return true;
-                    }
-
-                    result = val1 / val2;
+                    result = (double)val1 / val2;
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(supportedOperations), supportedOperations, null);
             }
 
-            return false;
+            return result;
         }
     }
 }
