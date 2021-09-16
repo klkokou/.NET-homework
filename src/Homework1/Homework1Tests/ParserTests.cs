@@ -26,37 +26,36 @@ namespace Homework1Tests
             Assert.Equal(operationExpected, operationResult);
             Assert.Equal(1253, val2);
         }
-        
+        [Fact]
+        public void ParseCalcArguments_WrongLengthArgs_WillReturnWrongArgsNumber()
+        {
+            var args = new[] { "98", "+", "1984", "qu" };
+            var parseCode = Parser.ParseArgs(args, out _, out _, out _);
+            Assert.Equal(WrongArgsNumber, parseCode);
+        }
        
         [Fact]
-        public void ParseArgs_NotNumber_WillReturnWrongArgFormatInt()
+        public void ParseArgs_NotNumber_WillReturnWrongValueFormat()
         {
-            var args = new[] { "4", "+", "turn around" };
-            var check = Parser.ParseArgs(args, out _, out _, out _);
-            Assert.Equal(WrongValueFormat, check);
+            var args = new[] { "4", "+", "qu" };
+            var parseCode = Parser.ParseArgs(args, out _, out _, out _);
+            Assert.Equal(WrongValueFormat, parseCode);
         }
         
         [Fact]
-        public void ParseArgss_NotOperation_WillReturnWrongArgFormatOperation()
+        public void ParseArgss_NotOperation_WillReturnWrongOperation()
         {
-            var args = new[] { "4", "turn around", "1337" };
-            var check = Parser.ParseArgs(args, out _, out _, out _);
-            Assert.Equal(WrongOperation, check);
-        }
-        [Fact]
-        public void ParseCalcArguments_WrongLengthArgs_WillReturnWrongArgLength()
-        {
-            var args = new[] { "4", "+", "1337", "Timur" };
-            var check = Parser.ParseArgs(args, out _, out _, out _);
-            Assert.Equal(WrongArgsNumber, check);
+            var args = new[] { "4", "qu", "1984" };
+            var parseCode = Parser.ParseArgs(args, out _, out _, out _);
+            Assert.Equal(WrongOperation, parseCode);
         }
 
         [Fact]
         public void ParseCalcArguements_DivisionByZero_WillReturnDivisionByZero()
         {
             var args = new[] { "2", "/", "0" };
-            var check = Parser.ParseArgs(args, out _, out _, out _);
-            Assert.Equal(DivisionByZero, check);
+            var parseCode = Parser.ParseArgs(args, out _, out _, out _);
+            Assert.Equal(DivisionByZero, parseCode);
         }
     }
 }
