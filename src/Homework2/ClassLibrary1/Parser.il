@@ -3,19 +3,12 @@
   .ver 1:0:0:0
 }
 
-.class public abstract sealed auto ansi beforefieldinit
-  ClassLibrary1.Parser
-    extends [mscorlib]System.Object
+.class public abstract sealed auto ansi beforefieldinit ClassLibrary1.Parser extends [mscorlib]System.Object
 {
-
-  .field private static literal int32 WrongArgsNumber = int32(1) // 0x00000001
-
-  .field private static literal int32 WrongValueFormat = int32(2) // 0x00000002
-
-  .field private static literal int32 WrongOperation = int32(3) // 0x00000003
-
-  .field private static literal int32 DivisionByZero = int32(4) // 0x00000004
-
+  .field private static literal int32 WrongArgsNumber = int32(1)
+  .field private static literal int32 WrongValueFormat = int32(2)
+  .field private static literal int32 WrongOperation = int32(3)
+  .field private static literal int32 DivisionByZero = int32(4)
   .method public hidebysig static int32
     ParseArgs(
       string[] args,
@@ -34,9 +27,6 @@
       [5] bool V_5,
       [6] bool V_6
     )
-
-    // [17 9 - 17 10]
-    IL_0000: nop
 
     // [18 13 - 18 48]
     IL_0001: ldarg.1      // val1
@@ -130,7 +120,7 @@
     IL_0063: ldloc.3      // V_3
     IL_0064: ret
 
-  } // end of method Parser::ParseArgs
+  }
 
   .method private hidebysig static bool
     CheckArgsNumber(
@@ -142,10 +132,6 @@
       [0] bool V_0,
       [1] bool V_1
     )
-
-    // [28 9 - 28 10]
-    IL_0000: nop
-
     // [29 13 - 29 34]
     IL_0001: ldarg.0      // args
     IL_0002: ldlen
@@ -170,8 +156,6 @@
     IL_0017: box          [mscorlib]System.Int32
     IL_001c: call         string [mscorlib]System.String::Format(string, object)
     IL_0021: call         void [mscorlib]System.Console::WriteLine(string)
-    IL_0026: nop
-
     // [31 13 - 31 25]
     IL_0027: ldc.i4.1
     IL_0028: stloc.1      // V_1
@@ -179,9 +163,9 @@
 
     // [32 9 - 32 10]
     IL_002b: ldloc.1      // V_1
-    IL_002c: ret
+    ret
 
-  } // end of method Parser::CheckArgsNumber
+  } 
 
   .method private hidebysig static bool
     TryParseValue(
@@ -194,10 +178,7 @@
       [0] bool V_0,
       [1] bool V_1
     )
-
-    // [35 9 - 35 10]
-    IL_0000: nop
-
+    
     // [36 13 - 36 47]
     IL_0001: ldarg.0      // arg
     IL_0002: ldarg.1      // result
@@ -217,8 +198,7 @@
     IL_0011: ldstr        " is not int"
     IL_0016: call         string [mscorlib]System.String::Concat(string, string)
     IL_001b: call         void [mscorlib]System.Console::WriteLine(string)
-    IL_0020: nop
-
+   
     // [39 13 - 39 25]
     IL_0021: ldc.i4.1
     IL_0022: stloc.1      // V_1
@@ -228,7 +208,7 @@
     IL_0025: ldloc.1      // V_1
     IL_0026: ret
 
-  } // end of method Parser::TryParseValue
+  } 
 
   .method private hidebysig static bool
     TryParseOperator(
@@ -242,10 +222,7 @@
       [1] string V_1,
       [2] bool V_2
     )
-
-    // [43 9 - 43 10]
-    IL_0000: nop
-
+    
     // [44 13 - 44 25]
     IL_0001: ldarg.0      // arg
     IL_0002: stloc.1      // V_1
@@ -320,7 +297,6 @@
 
     // [64 9 - 64 10]
     IL_005a: ldloc.2      // V_2
-    IL_005b: ret
-
-  } // end of method Parser::TryParseOperator
-} // end of class Homework1.Parser
+    ret
+  } 
+}
