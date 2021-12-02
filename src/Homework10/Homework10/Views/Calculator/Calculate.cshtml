@@ -1,0 +1,12 @@
+﻿@model AnswerModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<form method="post" asp-action="Calculate">
+    <input type="text" placeholder="Enter expression" name="expression"/>
+    <input type="submit" value="Count"/>
+</form>
+<span id="response" >@Model?.Answer</span>
