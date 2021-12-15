@@ -13,7 +13,7 @@ let webApp =
             choose [
                 route "/calculate" >=> CalculatorHttpHandler.calculatorHttpHandler
             ]
-        setStatusCode 404 >=> text "Not Found" ]
+        ]
 
 type Startup() =
     member _.ConfigureServices (services : IServiceCollection) =
