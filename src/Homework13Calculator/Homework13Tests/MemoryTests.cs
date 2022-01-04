@@ -35,10 +35,10 @@ namespace Homework13Tests
             dotMemory.Check(
                 memory =>
                 {
-                    var allocatedMemory = memory.GetTrafficFrom(memoryPoint).AllocatedMemory.SizeInBytes;
+                    var allocatedMemory = memory.GetTrafficFrom(memoryPoint).CollectedMemory.SizeInBytes.ToString();
+                    output.WriteLine(allocatedMemory);
                     output.WriteLine(size.ToString());
-                    output.WriteLine(allocatedMemory.ToString());
-                    Assert.True(allocatedMemory > size);
+                    Assert.True(memory.GetTrafficFrom(memoryPoint).CollectedMemory.SizeInBytes >= size);
                 });
         }
         private void SendRequest(string expression)
